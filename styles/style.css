@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  min-height: 50.5rem;
+  margin: 0 auto;
+}
+
+.container-padding {
+  padding: 0 14.38rem;
+}
+
+#hero {
+  background-color: #000;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-image: url("../images/banner/banner4.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+#hero .hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+
+#hero .hero-container h1 {
+  width: 32.8125rem;
+  color: #000;
+  text-align: right;
+  font-size: 4.0625rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#hero .hero-container p {
+  width: 30.875rem;
+  color: #000000a8;
+  text-align: right;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem; /* 162.5% */
+}
+
+button[class="cta"] {
+  width: 10rem;
+  height: 4rem;
+  border-radius: 0.3125rem;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#failures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.failure-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6.58rem;
+}
+
+.failure-container .left img {
+  max-width: 32.99556rem;
+  vertical-align: middle;
+}
+
+.failure-container .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1.5rem;
+  padding-top: 7rem;
+}
+
+.failure-container .right h2 {
+  max-width: 18rem;
+  color: #151414;
+}
+
+.failure-container .right p {
+  max-width: 26rem;
+  color: #444343;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem;
+}
+
+#failures .failure-container .items-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#failures .failure-container .items-container p {
+  color: #444343;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem;
+}
+
+#failures .failure-container .items-container i {
+  color: #16d887;
+}
+
+#plans .plan-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8.5rem;
+}
+
+#plans .plan-goals {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#plans .plan-goals h3 {
+  color: #151414;
+  text-align: center;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#plans .plan-goals p {
+  color: #737272;
+  text-align: center;
+  font-size: 1.5625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.plan-top-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3.13rem;
+}
+
+.plan-banner {
+  padding: 3.69rem 4rem;
+  border-radius: 1rem;
+  background: linear-gradient(90deg, #060606ff 0%, rgba(0, 95, 172, 0) 100%),
+    url("../images/watch.png");
+  background-size: cover, cover;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.plan-banner h2 {
+  width: 28.6875rem;
+  color: #fff;
+  text-align: left;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#plans .plan-container .plan-goals .goal img {
+  width: 4.5rem;
+}
+
+.goal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.goal img {
+  margin-bottom: 0.5rem;
+  max-width: 5.80988rem;
+}
+
+footer form input[type="email"] {
+  width: 20.3125rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  border: 1px solid #fff;
+  color: #f3f3f3;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 1.3rem;
+  margin-bottom: 1rem;
+  outline: none;
+  display: block;
+  background-color: transparent;
+}
+
+footer form input[type="submit"] {
+  width: 10rem;
+  height: 4rem;
+  border-radius: 0.3125rem;
+  background-color: #005fac;
+  color: #fff;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
