@@ -85,7 +85,7 @@ h2 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  background-image: url("../images/banner/banner4.jpeg");
+  background-image: url("../images/banner/banner4.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right center;
@@ -231,7 +231,7 @@ button[class="cta"] {
   padding: 3.69rem 4rem;
   border-radius: 1rem;
   background: linear-gradient(90deg, #060606ff 0%, rgba(0, 95, 172, 0) 100%),
-    url("../images/watch.png");
+    url("../images/watch.webp");
   background-size: cover, cover;
   background-repeat: no-repeat, no-repeat;
   display: flex;
