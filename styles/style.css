@@ -1,9 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: #005fac;
+  --secondary-color: #16d887;
+  --secondary-color-light: #e0f7f1;
+  --primary-font: "Work Sans", sans-serif;
+  --container-lr-padding: 14.38rem;
+  --flex-gap: 6.58rem;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -29,13 +39,51 @@ h2 {
 }
 
 .container-padding {
-  padding: 0 14.38rem;
+  padding: 0 var(--container-lr-padding);
+}
+
+.navbar {
+  width: 70%;
+  position: fixed;
+  top: 12px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-radius: 900px;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.navlink-container {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navlink {
+  cursor: pointer;
+  list-style: none;
+}
+
+.navlink a {
+  color: #151414;
+  text-decoration: none;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 #hero {
   background-color: #000;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   background-image: url("../images/banner/banner4.jpeg");
   background-size: cover;
@@ -94,7 +142,7 @@ button[class="cta"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6.58rem;
+  gap: var(--flex-gap);
 }
 
 .failure-container .left img {
@@ -249,4 +297,33 @@ footer form input[type="submit"] {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .container-padding {
+    padding: 0 2rem;
+  }
+
+  .failure-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 4rem;
+  }
+
+  .plan-goals {
+    flex-wrap: wrap;
+  }
+
+  .goal {
+  }
+
+  footer .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 1rem 0;
+  }
 }

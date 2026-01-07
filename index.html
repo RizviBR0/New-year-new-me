@@ -13,12 +13,21 @@
 
 <body>
     <header>
+        <nav class="navbar">
+            <div style="font-weight: bold; font-size: 1.3rem;">LOGO</div>
+            <ul class="navlink-container">
+                <li class="navlink"><a href="#hero">Home</a></li>
+                <li class="navlink"><a href="#failures">Failures</a></li>
+                <li class="navlink"><a href="#plans">Goals</a></li>
+            </ul>
+        </nav>
+
         <section id="hero" class="container container-padding">
             <div class="hero-container">
                 <h1>All things are possible if you believe</h1>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                     alteration in some form, by injected humour, or randomised words</p>
-                <button class="cta" style="background: #19181bff; color: #ffffffff;">Contact Us</button>
+                <button class="cta" style="background: #19181bff; color: #ffffffff;">Get Started</button>
             </div>
         </section>
     </header>
@@ -124,6 +133,18 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        let nav = document.querySelector('.navbar');
+        // should animate when scroll Y > 50
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                nav.style = 'width: 40%; background: #ffffff99; color: #151414; box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16); padding: 1rem 2rem;';
+            } else {
+                nav.style = 'width: 70%; background: transparent; color: #151414; box-shadow: none; padding: 1rem 0;';
+            }
+        });
+    </script>
 </body>
 
 </html>
